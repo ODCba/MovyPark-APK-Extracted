@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textAppearance="?unknown_attr_ref: 1010041" android:textSize="10pt" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="INGRESE EL PIN RECIBIDO POR SMS" />
+    <EditText android:id="@+id/txtPinManual" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="ingrese el pin aqui...." />
+</LinearLayout>

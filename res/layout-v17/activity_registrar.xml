@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="0pt" android:paddingTop="0pt" android:paddingRight="0pt" android:paddingBottom="0pt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TableLayout android:id="@+id/tableLayoutStep1" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:stretchColumns="*" android:shrinkColumns="*">
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="10pt" android:textColor="@color/colorPrimaryDark" android:layout_span="3" android:text="Registraremos su celular por unica vez" android:textAlignment="center" />
+        </TableRow>
+        <TableRow android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@+id/imageRegister" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/user_registration" android:layout_span="3" android:layout_weight="2.0" />
+        </TableRow>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" android:layout_marginBottom="50dp">
+            <TableRow android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textSize="10pt" android:textColor="#e62727" android:textColorHint="#baa3a3" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_span="2" android:text="Ingrese su telefono y operador" android:textIsSelectable="false" />
+            </TableRow>
+            <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <Spinner android:textSize="30sp" android:entries="@array/carriers_array" android:id="@+id/spnCarriers" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_column="0" android:prompt="@string/carrier_select" android:spinnerMode="dropdown" />
+                <EditText android:textSize="10pt" android:id="@+id/txtTelefono" android:layout_width="UNKNOWN_DATA_0xa901" android:layout_height="match_parent" android:layout_column="1" android:ems="10" android:maxLength="10" android:digits="0123456789" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+            </TableRow>
+            <TableRow android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="8pt" android:textColor="#ff9900" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="Recuerde ingresar el tel sin 54 ni 15.
+ Ej. 3514146990" />
+            </TableRow>
+            <TableRow android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:textSize="10pt" android:id="@+id/btnEnviarSMS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="Enviar PIN" style="?unknown_attr_ref: 1010049" />
+            </TableRow>
+        </LinearLayout>
+    </TableLayout>
+</RelativeLayout>

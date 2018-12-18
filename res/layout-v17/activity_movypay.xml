@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0"
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tbEstado" android:background="@drawable/border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0dp" android:layout_weight="9.0"
+        <LinearLayout android:orientation="vertical" android:padding="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" android:layout_weight="1.0">
+            <TextView android:textSize="36sp" android:textColor="0x1060015" android:textColorLink="0x1060015" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/lblEstado" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent" android:text="validando ......" android:layout_weight="1.0" android:textAllCaps="false" android:fontFamily="sans-serif-condensed" android:textAlignment="center" />
+            <LinearLayout android:orientation="horizontal" android:background="0x106000d" android:padding="5sp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+                <TextView android:textSize="24sp" android:textColor="0x106000c" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Saldo:" android:autoText="false" android:freezesText="false" android:layout_weight="80.0" android:textAllCaps="false" android:fontFamily="sans-serif-condensed" android:textAlignment="textEnd" />
+                <TextView android:textSize="24sp" android:textColor="0x1060015" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/lblSaldoMovypay" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent" android:text="$200" android:autoText="false" android:freezesText="false" android:layout_weight="80.0" android:textAllCaps="false" android:textAlignment="textStart" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="0x106000b" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2.0">
+        <WebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/tblMultas" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="0dp" android:layout_weight="10.0"
+        <LinearLayout android:orientation="horizontal" android:background="0x1060018" android:padding="5sp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0">
+            <TextView android:textSize="14sp" android:textColor="0x106000c" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@+id/lblMultasAviso" android:background="0x106000d" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Ud. tiene 3 infracciones pendientes" android:freezesText="false" android:layout_weight="40.0" android:textAllCaps="false" android:fontFamily="sans-serif-condensed" android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

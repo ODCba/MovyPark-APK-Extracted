@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="carriers_array">
+        <item>-- Seleccione --</item>
+        <item>Claro</item>
+        <item>Movistar</item>
+        <item>Personal</item>
+        <item>Nextel</item>
+    </array>
+</resources>
